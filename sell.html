@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Property | Sweet Homes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">SWEET<span>HOMES</span></a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="rent.html">Rent</a></li>
+            <li><a href="sell.html" style="color: rgb(59, 130, 246);">Sell</a></li>
+            <li class="mobile-only"><a href="login.html" class="btn btn-outline">Login</a></li>
+            <li class="mobile-only"><a href="signup.html" class="btn btn-primary">Sign Up</a></li>
+        </ul>
+        <div class="auth-btns">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <div class="auth-form glass" style="max-width: 600px;">
+            <h2>List Your Property</h2>
+            <p style="color: rgb(148, 163, 184); margin-bottom: 2rem;">Fill in the details below and our agents will
+                contact you within 24 hours.</p>
+            <form>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label>Property Type</label>
+                        <input type="text" placeholder="e.g. Villa, Apartment" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Expected Price</label>
+                        <input type="text" placeholder="$0.00" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" placeholder="Full Address" required>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" placeholder="Key features of your property" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Listing</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sweet Homes. All rights reserved.</p>
+    </footer>
+    <a href="contact.html" class="floating-contact">
+        <div class="floating-btn">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+        </div>
+    </a>
+
+</body>
+
+</html>

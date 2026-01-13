@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sweet Homes</title>
+    <meta name="description" content="Get in touch with Sweet Homes for premium property inquiries.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">SWEET<span>HOMES</span></a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="rent.html">Rent</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li class="mobile-only"><a href="login.html" class="btn btn-outline">Login</a></li>
+            <li class="mobile-only"><a href="signup.html" class="btn btn-primary">Sign Up</a></li>
+        </ul>
+        <div class="auth-btns">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <div class="auth-form glass">
+            <div class="section-header" style="margin-bottom: 2rem; text-align: left;">
+                <h2 style="font-size: 2rem;">Get in Touch</h2>
+                <p>Fill out the form below and our property experts will contact you shortly.</p>
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Property Interest</label>
+                    <input type="text" id="interest" placeholder="e.g. Luxury Villa in Goa">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send
+                    Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sweet Homes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for contacting Sweet Homes! We will get back to you soon.');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html>
